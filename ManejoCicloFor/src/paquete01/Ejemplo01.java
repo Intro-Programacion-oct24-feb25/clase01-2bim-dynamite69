@@ -29,10 +29,14 @@ public class Ejemplo01 {
         }
         
 <<<<<<< HEAD
+<<<<<<< HEAD
         System.out.printf("%s", cadenaFinal);
         System.out.println("via la roja");
 =======
         System.out.printf("%d", cadenaFinal);
+=======
+        System.out.printf("%s.2f", cadenaFinal);
+>>>>>>> c7ed9bbe51405763d4a096d63c5c0a5c90cb7a81
         System.out.println("cadenaFinal");
 >>>>>>> 647772bbd3cdc1b66d57921ae43eb1795c01a50d
 
