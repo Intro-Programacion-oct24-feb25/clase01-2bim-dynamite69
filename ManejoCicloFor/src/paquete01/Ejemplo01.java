@@ -29,7 +29,7 @@ public class Ejemplo01 {
         }
         
         System.out.printf("%s", cadenaFinal);
-        System.out.println("cadenaFinal");
+        System.out.println("via la roja");
 
     }
 
