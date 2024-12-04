@@ -29,6 +29,7 @@ public class Ejemplo01 {
         }
         
         System.out.printf("%s", cadenaFinal);
+        System.out.println("cadenaFinal");
 
     }
 
