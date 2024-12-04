@@ -28,7 +28,7 @@ public class Ejemplo01 {
                     cadenaFinal,i);
         }
         
-        System.out.printf("%d", cadenaFinal);
+        System.out.printf("%s.2f", cadenaFinal);
         System.out.println("cadenaFinal");
 
     }
