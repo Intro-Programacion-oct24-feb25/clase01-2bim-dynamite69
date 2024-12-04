@@ -16,14 +16,14 @@ public class Ejemplo01 {
      */
     public static void main(String[] args) {
         String cadenaFinal = "";
-        for (int i = 4; i <= 14; i++) {
+        for (int i = 10; i <= 18; i++) {
             // comentario
             
             cadenaFinal = String.format("%s%d", 
                     cadenaFinal,i);
         }
         
-        for (int i = 5; i < 15; i++) {
+        for (int i = 10; i < 20; i++) {
             cadenaFinal = String.format("%s%d", 
                     cadenaFinal,i);
         }
