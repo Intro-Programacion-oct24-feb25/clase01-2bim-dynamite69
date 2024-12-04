@@ -28,8 +28,13 @@ public class Ejemplo01 {
                     cadenaFinal,i);
         }
         
+<<<<<<< HEAD
         System.out.printf("%s", cadenaFinal);
         System.out.println("via la roja");
+=======
+        System.out.printf("%d", cadenaFinal);
+        System.out.println("cadenaFinal");
+>>>>>>> 647772bbd3cdc1b66d57921ae43eb1795c01a50d
 
     }
 
