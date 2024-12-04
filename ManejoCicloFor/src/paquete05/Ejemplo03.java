@@ -5,8 +5,8 @@
  */
 package paquete05;
 
-import paquete01.*;
-
+import java.util.Locale;
+import java.util.Scanner;
 /**
  *
  * @author reroes
@@ -17,21 +17,47 @@ public class Ejemplo03 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        Scanner entrada = new Scanner (System.in);
+        entrada.useLocale(Locale.US);
         
-        int num = 0;
-        int limite = 1;
-        int multiplicacion;
+        int filas = 0;
+        int columnas = 0;
+        int contador = 0;
+        int[][] tabla = new int[filas][columnas];
         
-        System.out.println("Ingrese el numero que desee multiplicar");
+        System.out.print("Ingresa el número de filas: ");
+        filas = scanner.nextInt();
+        System.out.print("Ingresa el número de columnas: ");
+        columnas = scanner.nextInt();
+
         
-        while (num <= limite) {
-            multiplicacion = num * limite; // 0 + 10
-                                                   // 10 + 12
-                                                   // 22 + 14
+        int totalElementos = filas * columnas; 
+        System.out.println("Ingresa los datos de la tabla:");
+
+        while (contador < totalElementos) {
+            int fila = contador / columnas; 
+            int columna = contador % columnas; 
+            System.out.print("Elemento en [" + fila + "][" + columna + "]: ");
+            tabla[fila][columna] = scanner.nextInt();
+            contador++;
         }
-        
-        System.out.printf("%d\n", num);
-        
+
+        System.out.println("\nLa tabla ingresada es:");
+        contador = 0;
+
+        while (contador < totalElementos) {
+            int fila = contador / columnas;
+            int columna = contador % columnas;
+            System.out.print(tabla[fila][columna] + "\t");
+            if (columna == columnas - 1) {
+                System.out.println(); 
+            }
+            contador++;
+        }
+
+        scanner.close();
     }
-    
 }
+
+    
+    
